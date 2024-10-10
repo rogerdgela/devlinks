@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
     /* background-image: url('./assets/bg-mobile.jpg');
     background-repeat: no-repeat;
@@ -7,9 +9,13 @@ body {
     background: url('./assets/bg-mobile.jpg') no-repeat top center/cover;
 }
 
+body * {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+}
+
 #container {
     width: 360px;
-    border: 1px solid #620388;
     margin: 0 auto;
 }
 
@@ -19,4 +25,9 @@ body {
 
 #profile img {
     width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
 }

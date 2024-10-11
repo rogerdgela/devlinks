@@ -40,3 +40,15 @@ body * {
     line-height: 24px;
     margin-top: 8px;
 }
+
+/* Links */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+ul li {
+    border: 1px solid #fff;
+}

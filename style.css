@@ -13,7 +13,7 @@
     --surface-color: rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(255, 255, 255, 0.2);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-g-url: url("./assets/moon-stars.svg");
+    --switch-bg-url: url("./assets/moon-stars.svg");
 }
 
 .light {
@@ -65,6 +65,8 @@ body * {
 /* switch */
 #switch {
     position: relative;
+    width: 64px;
+    margin: 4px auto;
 }
 #switch button {
     width: 32px;
@@ -73,8 +75,15 @@ body * {
     border: 0;
     border-radius: 50%;
     position: absolute;
-    right: 0;
+    left: 0;
+    top: 50%;
     z-index: 1;
+    transform: translateY(-50%);
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
 }
 
 #switch span {
